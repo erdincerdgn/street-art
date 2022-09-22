@@ -1,0 +1,161 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {list-style-type: none;}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header with Navigation Bar */
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 35px 0;
+}
+
+.logo a {
+    text-transform: uppercase;
+    border: none;
+    margin: 10px 20px;
+    padding: 10px 15px;
+    font-size: 25px;
+    border-radius: 3px;
+}
+
+.logo a:hover {
+    border: none;
+    background-color: lightgray;
+    border-radius: 0;
+}
+
+.desktop-main-menu ul li a {
+    margin: 10px 20px;
+    padding: 10px 15px;
+    font-size: 25px;
+    margin-right: 30px;
+}
+
+.desktop-main-menu ul li a:hover {
+    background-color: lightgray;
+}
+
+/* Flexbox Image Gallery */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin: 0 5px;
+}
+
+.column {
+    flex: 50%;
+    max-width: 50%;
+}
+
+.column img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* Footer */
+
+.footer {
+    background-color: rgb(246, 244, 244);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer h2 {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.footer img {
+    margin: 10px 0;
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.form {
+    margin: auto;
+    width: 60%;
+    margin: 10px;
+}
+
+.paragraph {
+    width: 100%;
+    font-size: 16px;
+    word-spacing: 1px;
+    line-height: 1.5;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.p-2 {
+    font-size: 18px;
+    padding: 20px 0;
+    color: #ff1a62;
+}
+
+.form-section input {
+    width: 100%;
+    border: 1px solid #ff99b9;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.form-section label {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.form button {
+    border: none;
+    cursor: pointer;
+    background-color:rgb(70, 62, 63);
+    color: #fff;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.form button:hover {
+    background-color: #C0C0C0;
+    color: #000;
+}
+
+.footer a {
+    border-bottom: 1px solid #000;
+    margin: 30px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
